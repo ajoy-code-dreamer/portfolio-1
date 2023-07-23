@@ -1,0 +1,79 @@
+// ===== navbar css =====
+#nav_main {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: transparent;
+    .navbar-brand {
+        width: 60px;
+        height: 60px;
+        padding: unset;
+        font-family: $primary-font;
+        color: $white-clr;
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: $transition;
+        cursor: pointer;
+        &:hover{
+            color: $text-clr;
+        }
+    }
+    .navbar-toggler {
+        border: 0;
+        color: $white-clr;
+        border-radius: 50%;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .menu {
+        column-gap: 20px;
+        .nav-link {
+            color: $white-clr;
+            padding: unset;
+            font-weight: 500;
+            font-size: 16px;
+            font-family: $secondary-font;
+            text-transform: uppercase;
+            transition: all 0.3s linear;
+            position: relative;
+            padding: 5px 10px;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: calc(100% + 10px);
+                left: 0;
+                top: -5px;
+                border-left: 2px solid $white-clr;
+                border-right: 2px solid $white-clr;
+                transform: scale(1,0);
+                transition: $transition;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                width: calc(100% + 10px);
+                height: 100%;
+                top: 0;
+                left: -5px;
+                border-top: 2px solid $white-clr;
+                border-bottom: 2px solid $white-clr;
+                transform: scale(0,1);
+                transition: $transition;
+            }
+            &:hover::after{
+                transform: scale(1,1);
+                
+            }
+            &:hover::before{
+                transform: scale(1,1);
+            }
+        }
+    }
+}
+// ===== navbar css =====
