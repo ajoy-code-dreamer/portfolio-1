@@ -49,8 +49,8 @@
                 height: calc(100% + 10px);
                 left: 0;
                 top: -5px;
-                border-left: 2px solid $white-clr;
-                border-right: 2px solid $white-clr;
+                border-left: 2px solid $primary-clr;
+                border-right: 2px solid $primary-clr;
                 transform: scale(1,0);
                 transition: $transition;
             }
@@ -61,8 +61,8 @@
                 height: 100%;
                 top: 0;
                 left: -5px;
-                border-top: 2px solid $white-clr;
-                border-bottom: 2px solid $white-clr;
+                border-top: 2px solid $primary-clr;
+                border-bottom: 2px solid $primary-clr;
                 transform: scale(0,1);
                 transition: $transition;
             }

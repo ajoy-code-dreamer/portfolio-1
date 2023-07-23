@@ -46,6 +46,50 @@ body {
   padding-right: 10px;
 }
 
+.common_section_heading h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  color: #555;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  padding-bottom: 2 0px;
+}
+.common_section_heading h2 span {
+  color: #FA5B0F;
+}
+.common_section_heading p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #555;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+.common_section_heading p::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #FA5B0F;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+.common_section_heading p::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #FA5B0F;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}
+
 #nav_main {
   width: 100%;
   position: absolute;
@@ -100,8 +144,8 @@ body {
   height: calc(100% + 10px);
   left: 0;
   top: -5px;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-left: 2px solid #FA5B0F;
+  border-right: 2px solid #FA5B0F;
   transform: scale(1, 0);
   transition: all 0.3s linear;
 }
@@ -112,8 +156,8 @@ body {
   height: 100%;
   top: 0;
   left: -5px;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 2px solid #FA5B0F;
+  border-bottom: 2px solid #FA5B0F;
   transform: scale(0, 1);
   transition: all 0.3s linear;
 }
@@ -185,4 +229,26 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+#about {
+  padding: 60px 0;
+}
+#about .about_part_1 {
+  margin: 50px 0;
+}
+#about .about_part_1 .about_img_wrapper {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FA5B0F;
+  background-color: #555;
+  position: relative;
+  z-index: 555;
+}
+#about .about_part_1 .about_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
