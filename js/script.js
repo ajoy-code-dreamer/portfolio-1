@@ -1,6 +1,6 @@
-$(function(){
-    // ===== type js operation =====
-    $(".typed").typed({
+$(function () {
+	// ===== type js operation =====
+	$(".typed").typed({
 		strings: ["Ajoy saha", "a web Designer", "a freelancer", "a blogger"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
@@ -23,15 +23,15 @@ $(function(){
 		// attribute to type (null == text)
 		attr: null,
 		// either html or text
-		contentType: 'html',
+		contentType: "html",
 		// call when done callback function
-		callback: function() {},
+		callback: function () {},
 		// starting callback function before each string
-		preStringTyped: function() {},
+		preStringTyped: function () {},
 		//callback for every typed string
-		onStringTyped: function() {},
+		onStringTyped: function () {},
 		// callback for reset
-		resetCallback: function() {}
+		resetCallback: function () {},
 	});
-    // ===== type js operation =====
-})
+	// ===== type js operation =====
+});

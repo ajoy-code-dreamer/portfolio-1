@@ -20,5 +20,25 @@ body{
 .container{
     margin: 0 auto;
 }
+.common_btn{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $primary-font;
+    color: $white-clr;
+    border: 2px solid $primary-clr;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-color: $primary-clr;
+    letter-spacing: 1px;
+    transition: $transition;
+    &:hover{
+        color: $primary-clr;
+        background-color: transparent;                                                
+    }
+    span{
+        padding-right: 10px;
+    }
+}
 
 // ===== common css =====
