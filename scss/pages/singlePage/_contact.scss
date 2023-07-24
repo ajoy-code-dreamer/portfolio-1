@@ -1,0 +1,115 @@
+// ==== contact section css start here =====
+#contact {
+	padding: 60px 0;
+	.contact_part_wrapper {
+		justify-content: center;
+		row-gap: 30px;
+		margin: 50px 0;
+		.contact_details_wrapper {
+			display: flex;
+			flex-direction: column;
+			row-gap: 30px;
+            margin: 0 auto;
+			.contact_details_item {
+				font-family: $secondary-font;
+				color: $text-clr;
+				h6 {
+					font-weight: 400;
+					font-size: 15px;
+					padding-bottom: 15px;
+				}
+				p {
+					font-weight: 500;
+					font-size: 16px;
+					span {
+						color: $primary-clr;
+						padding-right: 10px;
+					}
+				}
+			}
+			.social_link_wrapper {
+				h6 {
+					font-family: $secondary-font;
+					color: $text-clr;
+					font-weight: 400;
+					font-size: 15px;
+					padding-bottom: 15px;
+				}
+				.social_link_group {
+					display: flex;
+					align-items: center;
+					column-gap: 15px;
+					.social_link {
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						border: 1px solid $primary-clr;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						cursor: pointer;
+						transition: $transition;
+						a {
+							color: $primary-clr;
+							transition: $transition;
+						}
+						&:hover {
+							background-color: $primary-clr;
+							a {
+								color: $white-clr;
+								transform: rotate(360deg);
+							}
+						}
+					}
+				}
+			}
+		}
+        .contact_form_wrapper{
+            margin: 0 auto;
+            p{
+                font-family: $secondary-font;
+                color: $text-clr;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 2;
+                text-transform: capitalize;
+            }
+            .contact_form{
+                margin-top: 30px;
+                .inp_box{
+                    position: relative;
+                    span{
+                        position: absolute;
+                        top: 16px;
+                        left: 15px;
+                        font-size: 16px;
+                        font-weight: 300;
+                        color: $text-clr;
+                    }
+                }
+                .form_group{
+                    display: flex;
+                    gap: 30px;
+                }
+                input,textarea{
+                    padding: 15px 40px;
+                    resize: none;
+                    border: 1px solid $text-clr;
+                    border-radius: 20px;
+                    &::placeholder{
+                        font-family: $secondary-font;
+                        font-size: 16px;
+                        color: $text-clr;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                        border: 1px solid $primary-clr;
+                    }
+                }
+            }
+        }
+	}
+}
+// ==== contact section css end here =====
