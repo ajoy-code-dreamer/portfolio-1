@@ -68,6 +68,9 @@
         font-family: $secondary-font;
         font-weight: 500;
         font-size: 18px;
+        p{
+            padding: 10px;
+        }
         .progress-bar{
             text-align: right;
             color: $white-clr;
