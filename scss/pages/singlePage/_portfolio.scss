@@ -1,0 +1,63 @@
+// ===== portfolio section css =====
+#portfolio {
+	padding: 50px 50px;
+	.portfolio_item_wrapper {
+		margin: 30px 0;
+		row-gap: 30px;
+		.portfolio_item {
+			width: 350px;
+			height: 450px;
+			border-radius: 10px;
+			border: 2px solid $primary-clr;
+			overflow: hidden;
+			object-fit: cover;
+			position: relative;
+            cursor: pointer;
+			margin: 0 auto;
+			.project_overlay {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+                flex-direction: column;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: $primary-clr;
+				z-index: 555;
+                transform: scale(0);
+				transition: $transition;
+				h4 {
+					font-family: $primary-font;
+					font-size: 24px;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: $white-clr;
+                    line-height: 1.4;
+                    padding-bottom: 30px;
+				}
+                .portfolio_btn{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    text-align: center;
+                    .common_btn{
+                        color: $white-clr;
+                        border-color: $white-clr;
+                        &:hover{
+                            color: $text-clr;
+                            border-color: $text-clr;
+                        }
+                    }
+                }
+			}
+			&:hover {
+				.project_overlay {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+// ===== portfolio section css =====
