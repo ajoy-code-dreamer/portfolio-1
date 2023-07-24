@@ -234,21 +234,146 @@ body {
 #about {
   padding: 60px 0;
 }
-#about .about_part_1 {
+#about .about_part_1_wrapper {
   margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #555;
 }
-#about .about_part_1 .about_img_wrapper {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #FA5B0F;
-  background-color: #555;
+#about .about_part_1_wrapper .about_img_wrapper {
+  width: 440px;
+  height: 440px;
+  border: 5px solid #FA5B0F;
   position: relative;
   z-index: 555;
 }
-#about .about_part_1 .about_img {
+#about .about_part_1_wrapper .about_img_wrapper .about_img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+#about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper .about_details ul li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #555;
+  line-height: 1.4;
+}
+#about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper .about_details ul li span {
+  font-weight: 400;
+  padding-right: 30px;
+}
+#about .about_part_1_wrapper .about_details_wrapper .about_btn {
+  margin-left: 40px;
+}
+#about .about_skill_part_wrapper {
+  row-gap: 30px;
+}
+#about .about_skill_part_wrapper h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #555;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+}
+#about .skill_item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+#about .skill_item .progress-bar {
+  text-align: right;
+  color: #fff;
+  background-color: #FA5B0F;
+  font-weight: 700;
+}
+#about .skill_item .progress_html {
+  width: 90%;
+  animation: progress_html 2s linear 0.5s 1;
+}
+@keyframes progress_html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+#about .skill_item .progress_css {
+  width: 80%;
+  animation: progress_css 2s linear 0.5s 1;
+}
+@keyframes progress_css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+#about .skill_item .progress_sass {
+  width: 90%;
+  animation: progress_sass 3s linear 0.5s 1;
+}
+@keyframes progress_sass {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+#about .skill_item .progress_bem {
+  width: 95%;
+  animation: progress_bem 4s linear 0.5s 1;
+}
+@keyframes progress_bem {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+#about .skill_item .progress_java {
+  width: 30%;
+  animation: progress_java 4s linear 0.5s 1;
+}
+@keyframes progress_java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+#about .skill_item .progress_jquery {
+  width: 50%;
+  animation: progress_jquery 4s linear 0.5s 1;
+}
+@keyframes progress_jquery {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
