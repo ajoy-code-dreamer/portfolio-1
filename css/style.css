@@ -312,7 +312,7 @@ body {
 }
 #about .skill_item .progress_html {
   width: 90%;
-  animation: progress_html 2s linear 0.5s 1;
+  animation: progress_html 2s linear 3s 1;
 }
 @keyframes progress_html {
   0% {
@@ -324,7 +324,7 @@ body {
 }
 #about .skill_item .progress_css {
   width: 80%;
-  animation: progress_css 2s linear 0.5s 1;
+  animation: progress_css 2s linear 3s 1;
 }
 @keyframes progress_css {
   0% {
@@ -336,7 +336,7 @@ body {
 }
 #about .skill_item .progress_sass {
   width: 90%;
-  animation: progress_sass 3s linear 0.5s 1;
+  animation: progress_sass 3s linear 3s 1;
 }
 @keyframes progress_sass {
   0% {
@@ -348,7 +348,7 @@ body {
 }
 #about .skill_item .progress_bem {
   width: 95%;
-  animation: progress_bem 4s linear 0.5s 1;
+  animation: progress_bem 4s linear 3s 1;
 }
 @keyframes progress_bem {
   0% {
@@ -360,7 +360,7 @@ body {
 }
 #about .skill_item .progress_java {
   width: 30%;
-  animation: progress_java 4s linear 0.5s 1;
+  animation: progress_java 4s linear 3s 1;
 }
 @keyframes progress_java {
   0% {
@@ -372,7 +372,7 @@ body {
 }
 #about .skill_item .progress_jquery {
   width: 50%;
-  animation: progress_jquery 4s linear 0.5s 1;
+  animation: progress_jquery 4s linear 3s 1;
 }
 @keyframes progress_jquery {
   0% {
@@ -643,4 +643,135 @@ body {
 #contact .contact_part_wrapper .contact_form_wrapper .contact_form input:focus, #contact .contact_part_wrapper .contact_form_wrapper .contact_form textarea:focus {
   box-shadow: none;
   border: 1px solid #FA5B0F;
+}
+
+.page {
+  position: relative;
+  height: 100%;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 111111111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all linear;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+.preloader::before,
+.preloader::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: 0.2s linear;
+  transform: translateY(0);
+  pointer-events: none;
+}
+
+.preloader::before {
+  top: 0;
+  bottom: 50%;
+  background: #fff;
+}
+
+.preloader::after {
+  top: 50%;
+  bottom: 0;
+  background: #fff;
+}
+
+.preloader.loaded::before,
+.preloader.loaded::after {
+  transition: 0.4s linear;
+}
+
+.preloader.loaded::before {
+  transform: translateY(-101%);
+}
+
+.preloader.loaded::after {
+  transform: translateY(101%);
+}
+
+.preloader.loaded .preloader-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0s;
+}
+
+.preloader-text-center {
+  transition: 0s 0.2s;
+}
+
+.preloader-container {
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  left: 0;
+  right: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.preloader-container h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #222;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+#progress-line-container {
+  width: 100vw;
+  height: 5px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.progress-line {
+  background: #FA5B0F;
+  margin-top: 0;
+  margin-left: -100vw;
+  animation-name: progess_animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 100vw;
+  height: 5px;
+  transition: 0.5s;
+}
+
+@keyframes progess_animation {
+  0% {
+    margin-left: -100vw;
+  }
+  100% {
+    margin-left: 100vw;
+  }
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  opacity: 1;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+html:not(.lt-ie10) .not-animated {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */

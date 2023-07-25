@@ -17,10 +17,22 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/responsive.css">
+		<link rel="stylesheet" href="./css/responsive.css" />
 	</head>
 	<body>
+		<!-- ===== preloader ===== -->
+		<div class="preloader">
+			<div class="preloader-container">
+				<h1>AJOY</h1>
+				<div id="progress-line-container">
+					<div class="progress-line"></div>
+				</div>
+				<h1>SAHA</h1>
+			</div>
+		</div>
+		<!-- ===== preloader ===== -->
 		<!-- ===== navbar start here ===== -->
 		<nav class="navbar navbar-expand-xxl" id="nav_main">
 			<div class="container">
@@ -71,7 +83,8 @@
 			<div class="container">
 				<div class="row banner_wrapper">
 					<div class="col-lg-3">
-						<div class="banner_img_wrapper">
+						<div class="banner_img_wrapper" data-aos="fade-right"
+						data-aos-delay="600" data-aos-duration="1500">
 							<div class="banner_img">
 								<img
 									class="w-100 h-100"
@@ -82,7 +95,7 @@
 						</div>
 					</div>
 					<div class="col-lg-5">
-						<div class="banner_content_wrapper">
+						<div class="banner_content_wrapper" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1500">
 							<h6>HI THERE !</h6>
 							<h2>I'm <span class="typed"></span></h2>
 							<p>
@@ -91,7 +104,7 @@
 								beautiful web applications through carefully
 								crafted code and user-centric design.
 							</p>
-							<div class="banner_btn_wrapper">
+							<div class="banner_btn_wrapper" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
 								<a class="common_btn" href="#"
 									><span
 										><i class="fa-solid fa-user"></i></span
@@ -115,7 +128,7 @@
 		<section id="about">
 			<div class="container">
 				<div class="about_section_wrapper">
-					<div class="common_section_heading text-center">
+					<div class="common_section_heading text-center" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 						<h2>ABOUT <span>ME</span></h2>
 						<p>
 							I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT
@@ -124,7 +137,8 @@
 					</div>
 					<div class="row about_part_1_wrapper">
 						<div class="col-4">
-							<div class="about_img_wrapper">
+							<div class="about_img_wrapper" data-aos="fade-right"
+							data-aos-delay="600" data-aos-duration="1500">
 								<div class="about_img">
 									<img
 										class="w-100 h-100"
@@ -135,7 +149,8 @@
 							</div>
 						</div>
 						<div class="col-6">
-							<div class="about_details_wrapper">
+							<div class="about_details_wrapper" data-aos="fade-left"
+							data-aos-delay="600" data-aos-duration="1500">
 								<div class="about_details_item_wrapper">
 									<div class="about_details">
 										<ul>
@@ -175,7 +190,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="about_btn">
+								<div class="about_btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 									<a href="#" class="common_btn"
 										><span
 											><i
@@ -306,7 +321,7 @@
 		<section id="portfolio">
 			<div class="container">
 				<div class="portfolio_section_wrapper">
-					<div class="common_section_heading text-center">
+					<div class="common_section_heading text-center" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 						<h2>MY <span>portfolio</span></h2>
 						<p>
 							A FEW RECENT DESIGN AND CODING PROJECTS. WANT TO SEE
@@ -315,7 +330,7 @@
 					</div>
 					<div class="row portfolio_item_wrapper">
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_travel-camp.png"
@@ -343,7 +358,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-up" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_mogo.png"
@@ -371,7 +386,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_waxom.png"
@@ -399,7 +414,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_innovate-6.png"
@@ -427,7 +442,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-up" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_kubb.png"
@@ -455,7 +470,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_creative.png"
@@ -483,7 +498,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_innovate-3.png"
@@ -511,7 +526,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-up" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_realstaste.png"
@@ -539,7 +554,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="portfolio_item">
+							<div class="portfolio_item" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1500">
 								<img
 									class="w-100 h-100"
 									src="./images/project_basic.png"
@@ -575,7 +590,7 @@
 		<section id="blog">
 			<div class="container">
 				<div class="blog_section_wrapper">
-					<div class="common_section_heading text-center">
+					<div class="common_section_heading text-center" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 						<h2>LATEST <span>POSTS</span></h2>
 						<p>
 							TIPS, INSIGHTS, AND BEST PRACTICES ABOUT WEB DESIGN
@@ -584,7 +599,7 @@
 					</div>
 					<div class="row blog_item_wrapper">
 						<div class="col-lg-6">
-							<div class="blog_item">
+							<div class="blog_item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
 								<div class="blog_img">
 									<img
 										class="w-100 h-100"
@@ -607,7 +622,7 @@
 										excepturi soluta rem?.....
 									</p>
 								</div>
-								<div class="blog_btn">
+								<div class="blog_btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 									<a class="common_btn" href="#"
 										><span
 											><i
@@ -619,7 +634,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="blog_item">
+							<div class="blog_item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
 								<div class="blog_img">
 									<img
 										class="w-100 h-100"
@@ -642,7 +657,7 @@
 										excepturi soluta rem?.....
 									</p>
 								</div>
-								<div class="blog_btn">
+								<div class="blog_btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 									<a class="common_btn" href="#"
 										><span
 											><i
@@ -654,7 +669,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="blog_item">
+							<div class="blog_item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
 								<div class="blog_img">
 									<img
 										class="w-100 h-100"
@@ -675,7 +690,7 @@
 										excepturi soluta rem?.....
 									</p>
 								</div>
-								<div class="blog_btn">
+								<div class="blog_btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 									<a class="common_btn" href="#"
 										><span
 											><i
@@ -687,7 +702,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="blog_item">
+							<div class="blog_item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
 								<div class="blog_img">
 									<img
 										class="w-100 h-100"
@@ -710,7 +725,7 @@
 										excepturi soluta rem?.....
 									</p>
 								</div>
-								<div class="blog_btn">
+								<div class="blog_btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 									<a class="common_btn" href="#"
 										><span
 											><i
@@ -722,7 +737,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="blog_item">
+							<div class="blog_item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
 								<div class="blog_img">
 									<img
 										class="w-100 h-100"
@@ -743,7 +758,7 @@
 										excepturi soluta rem?.....
 									</p>
 								</div>
-								<div class="blog_btn">
+								<div class="blog_btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 									<a class="common_btn" href="#"
 										><span
 											><i
@@ -755,7 +770,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="blog_item">
+							<div class="blog_item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
 								<div class="blog_img">
 									<img
 										class="w-100 h-100"
@@ -778,7 +793,7 @@
 										excepturi soluta rem?.....
 									</p>
 								</div>
-								<div class="blog_btn">
+								<div class="blog_btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 									<a class="common_btn" href="#"
 										><span
 											><i
@@ -804,7 +819,7 @@
 		<section id="contact">
 			<div class="container">
 				<div class="contact_section_wrapper">
-					<div class="common_section_heading text-center">
+					<div class="common_section_heading text-center" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 						<h2>GET <span>IN TOUCH</span></h2>
 						<p>
 							I'M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR
@@ -813,7 +828,8 @@
 					</div>
 					<div class="row contact_part_wrapper">
 						<div class="col-lg-4">
-							<div class="contact_details_wrapper">
+							<div class="contact_details_wrapper" data-aos="fade-right"
+							data-aos-delay="600" data-aos-duration="1500">
 								<div class="contact_details_item">
 									<h6>Mobile</h6>
 									<p>
@@ -898,15 +914,17 @@
 										<div class="social_link">
 											<a href="#"
 												><i
-												class="fa-brands fa-twitter"
-											></i></a>
+													class="fa-brands fa-twitter"
+												></i
+											></a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-8">
-							<div class="contact_form_wrapper">
+							<div class="contact_form_wrapper" data-aos="fade-left"
+							data-aos-delay="600" data-aos-duration="1500">
 								<p>
 									If you have any suggestion, project or even
 									you want to say Hello.. please fill out the
@@ -916,7 +934,11 @@
 									<form action="" method="">
 										<div class="form_group">
 											<div class="mb-4 w-50 inp_box">
-												<span><i class="fa-solid fa-user"></i></span>
+												<span
+													><i
+														class="fa-solid fa-user"
+													></i
+												></span>
 												<input
 													type="text"
 													class="form-control"
@@ -925,7 +947,11 @@
 												/>
 											</div>
 											<div class="mb-4 w-50 inp_box">
-												<span><i class="fa-solid fa-envelope"></i></span>
+												<span
+													><i
+														class="fa-solid fa-envelope"
+													></i
+												></span>
 												<input
 													type="email"
 													class="form-control"
@@ -935,7 +961,11 @@
 											</div>
 										</div>
 										<div class="mb-4 inp_box">
-											<span><i class="fa-solid fa-comments"></i></span>
+											<span
+												><i
+													class="fa-solid fa-comments"
+												></i
+											></span>
 											<textarea
 												class="form-control"
 												rows="5"
@@ -943,12 +973,14 @@
 												required
 											></textarea>
 										</div>
-										<div class="form_btn">
+										<div class="form_btn" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
 											<a class="common_btn" href="#"
-										><span
-											><i class="fa-solid fa-paper-plane"></i></span
-										>send massage</a
-									>
+												><span
+													><i
+														class="fa-solid fa-paper-plane"
+													></i></span
+												>send massage</a
+											>
 										</div>
 									</form>
 								</div>
@@ -974,7 +1006,11 @@
 			src="https://kit.fontawesome.com/a6b86bf834.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="./js/typed.min.js"></script>
+		<script>
+			AOS.init();
+		</script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>

@@ -1,3 +1,9 @@
+// ===== javaScript operation =====
+// === aos js ===
+// === aos js ===
+
+// ===== javaScript operation =====
+
 $(function () {
 	// ===== type js operation =====
 	$(".typed").typed({
@@ -34,4 +40,36 @@ $(function () {
 		resetCallback: function () {},
 	});
 	// ===== type js operation =====
+
+	// ===== preloader animation =====
+
+	// var pageTransitionAnimationDuration = 500;
+	// var preloader = $(".preloader");
+	// pageTransition({
+	// 	target: document.querySelector(".page"),
+	// 	delay: 0,
+	// 	duration: pageTransitionAnimationDuration,
+	// 	classActive: "animated",
+	// 	conditions: function (event, link) {
+	// 		return;
+	// 		!/(\#|callto:|tel:|mailto:|:\/\/)/.test(link) &&
+	// 		!event.currentTarget.hasAttribute("data-lightgallery") &&
+	// 		event.currentTarget.getAttribute("href") !==
+	// 		"javascript:void(0);";
+	// 	},
+	// 	onTransitionStart: function (options) {
+	// 		setTimeout(function () {
+	// 			preloader.removeClass("loaded");
+	// 		}, options.duration * 0.75);
+	// 	},
+	// 	onReady: function () {
+	// 		preloader.addClass("loaded");
+	// 	},
+	// });
+
+	$(window).load(function () {
+		$(".preloader").delay(500).fadeOut(500);
+	});
+
+	// ===== preloader animation =====
 });
