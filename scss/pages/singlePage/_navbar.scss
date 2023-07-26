@@ -4,8 +4,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 0;
-    background-color: transparent;
+    padding: 15px 0;
+    background-color: #124D5C;
     .navbar-brand {
         width: 60px;
         height: 60px;
@@ -75,5 +75,14 @@
             }
         }
     }
+}
+
+#nav_main.fixed_nav{
+    position: sticky;
+    background-color: #124D5C;
+    padding: 5px 0;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
 }
 // ===== navbar css =====

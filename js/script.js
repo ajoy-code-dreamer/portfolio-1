@@ -1,8 +1,4 @@
-// ===== javaScript operation =====
-// === aos js ===
-// === aos js ===
-
-// ===== javaScript operation =====
+// ===== jQuery operation ======
 
 $(function () {
 	// ===== type js operation =====
@@ -40,7 +36,7 @@ $(function () {
 		resetCallback: function () {},
 	});
 	// ===== type js operation =====
-
+	
 	// ===== preloader animation =====
 
 	// var pageTransitionAnimationDuration = 500;
@@ -72,4 +68,52 @@ $(function () {
 	});
 
 	// ===== preloader animation =====
+
+	// ===== fixed nav ======
+	// $(window).scroll(function () {
+	// 	let fixedNav = $(this).scrollTop();
+	// 	if (fixedNav > 1000) {
+	// 		$("#nav_main").addClass("fixed_nav");
+	// 	} else {
+	// 		$("#nav_main").removeClass("fixed_nav");
+	// 	}
+	// });
+	// ===== fixed nav ======
+	// // ===== active nav ====
+	// $('.nav_item').on('click',function(){
+	// 	$(this).addClass('active').siblings().removeClass('active')
+	// })
+	// // ===== active nav ====
+
+
 });
+// ===== jQuery operation ======
+
+// ===== javaScript operation =====
+// ===== scrolling nav =====
+
+var lastScrollTop = 0;
+window.addEventListener(
+	"scroll",
+	function () {
+		var scrolling = window.scrollY;
+		let fixedNav = document.querySelector("#nav_main")
+		
+		if (scrolling > lastScrollTop) {
+			// console.log("scroll down");
+			fixedNav.classList.remove("fixed_nav");
+		} else if (scrolling < lastScrollTop) {
+			// console.log("scroll up");
+			fixedNav.classList.add("fixed_nav");
+
+		}
+		
+		lastScrollTop = scrolling <= 0 ? 0 : scrolling;
+	},
+	false
+	);
+	// ===== scrolling nav =====
+// === aos js ===
+// === aos js ===
+
+// ===== javaScript operation ===== 

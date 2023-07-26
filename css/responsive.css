@@ -1,0 +1,291 @@
+/* ======== responsive css ======== */
+/* ========================= device (xs 0 > 576) ========================= */
+@media (max-width: 575.98px) {
+	/* === nav === */
+	#nav_main {
+		padding: 10px 0;
+	}
+	#nav_main .navbar-brand {
+		width: 40px;
+		height: 40px;
+	}
+	#nav_main .menu {
+		row-gap: 5px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#nav_main .menu .nav-link {
+		display: inline-block;
+	}
+	/* === nav === */
+	/* === banner === */
+	#banner {
+		padding: 150px 10px;
+		height: auto;
+        text-align: center;
+	}
+	#banner .banner_wrapper .banner_img_wrapper .banner_img {
+		width: 200px;
+		height: 200px;
+		border: 5px solid #ff5722;
+		margin: 0 auto;
+	}
+	#banner .banner_wrapper .banner_content_wrapper h6 {
+		font-size: 17px;
+	}
+	#banner .banner_wrapper .banner_content_wrapper h2 {
+		font-size: 30px;
+	}
+	#banner .banner_wrapper .banner_content_wrapper p {
+		font-size: 14px;
+	}
+	#banner .banner_wrapper .banner_content_wrapper .banner_btn_wrapper {
+		justify-content: center;
+	}
+	#banner .common_btn {
+		padding: 8px 20px;
+		letter-spacing: 0;
+	}
+	/* === banner === */
+    /* === about === */
+    #about{
+        text-align: left;
+    }
+    .common_section_heading h2 {
+        font-size: 40px;
+    }
+    .common_section_heading p::before {
+        display: none;
+    }
+    .common_section_heading p::after {
+        display: none;
+    }
+    #about .about_part_1_wrapper .about_img_wrapper {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    #about .about_part_1_wrapper .about_img_wrapper .about_img {
+        bottom: 0px;
+        right: 0px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper {
+        justify-content: start;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper .about_details ul li {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper .about_details ul li span {
+        padding-right: 20px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_btn {
+        margin-left: unset;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #about .common_btn {
+        padding: 10px 18px;
+    }
+
+    #about .about_skill_part_wrapper h3 {
+        padding-bottom: 0;
+        text-align: center;
+    }
+    #about .about_skill_part_wrapper {
+        row-gap: 20px;
+    }
+    /* === about === */
+}
+/* ========================= device (xs 0 > 576) ========================= */
+
+/* ========================= device (sm 576 > 768) ========================= */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* === nav === */
+	#nav_main {
+		padding: 10px 0;
+	}
+	#nav_main .navbar-brand {
+		width: 45px;
+		height: 45px;
+	}
+	#nav_main .menu {
+		row-gap: 5px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#nav_main .menu .nav-link {
+		display: inline-block;
+	}
+	/* === nav === */
+	/* === banner === */
+	#banner {
+		padding: 150px 0;
+		height: auto;
+        text-align: center;
+	}
+	#banner .banner_wrapper .banner_img_wrapper .banner_img {
+		border: 5px solid #ff5722;
+		margin: 0 auto;
+	}
+	#banner .banner_wrapper .banner_content_wrapper .banner_btn_wrapper {
+		justify-content: center;
+	}
+	/* === banner === */
+    /* === about === */
+    #about .about_part_1_wrapper .about_img_wrapper {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    #about .about_part_1_wrapper .about_img_wrapper .about_img {
+        bottom: 0px;
+        right: 0px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper {
+        justify-content: start;
+        margin-left: 100px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper .about_details ul li {
+        padding-bottom: 15px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper .about_details ul li span {
+        padding-right: 20px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_btn {
+        margin-left: unset;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #about .about_skill_part_wrapper h3 {
+        padding-bottom: 0;
+        text-align: center;
+    }
+    /* === about === */
+}
+/* ========================= device (sm 576 > 768) ========================= */
+
+/* ========================= device (md 768 > 992) ========================= */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* === nav === */
+	#nav_main {
+		padding: 10px 0;
+	}
+	#nav_main .navbar-brand {
+		width: 50px;
+		height: 50px;
+	}
+	#nav_main .menu {
+		row-gap: 5px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#nav_main .menu .nav-link {
+		display: inline-block;
+	}
+	/* === nav === */
+	/* === banner === */
+	#banner {
+		padding: 200px 0;
+		height: auto;
+        text-align: center;
+	}
+	#banner .banner_wrapper .banner_img_wrapper .banner_img {
+		margin: 0 auto;
+	}
+	#banner .banner_wrapper .banner_content_wrapper .banner_btn_wrapper {
+		justify-content: center;
+	}
+	/* === banner === */
+    /* === about === */
+    #about .about_part_1_wrapper .about_img_wrapper {
+        margin: 0 auto;
+    }
+    #about .about_part_1_wrapper .about_img_wrapper .about_img {
+        bottom: 0px;
+        right: 0px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper {
+        justify-content: start;
+        margin-left: 100px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_btn {
+        margin-left: unset;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #about .about_skill_part_wrapper h3 {
+        padding-bottom: 0;
+        text-align: center;
+    }
+    /* === about === */
+}
+/* ========================= device (md 768 > 992) ========================= */
+
+/* ========================= device (lg 992 > 1200) ========================= */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	/* === banner === */
+	#banner {
+		padding: 250px 0;
+        height: auto;
+	}
+    #banner .banner_wrapper {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    #banner .banner_wrapper .banner_content_wrapper h2 {
+        font-size: 34px;
+    }
+    #banner .common_btn {
+        padding: 10px 20px;
+        letter-spacing: 0;
+    }
+	/* === banner === */
+    /* === about === */
+    #about .about_part_1_wrapper .about_img_wrapper {
+        width: 300px;
+        height: 300px;
+        margin: 0;
+    }
+    #about .about_part_1_wrapper .about_img_wrapper .about_img {
+        bottom: 20px;
+        right: 20px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper {
+        justify-content: start;
+        margin-left: 50px;
+    }
+    /* === about === */
+}
+/* ========================= device (lg 992 > 1200) ========================= */
+
+/* ========================= device (xl 1200 > 1400) ========================= */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    /* === banner === */
+	#banner {
+		padding: 150px 0;
+        height: auto;
+	}
+    #banner .banner_wrapper {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    /* === banner ==== */
+    /* === about === */
+    #about .about_part_1_wrapper .about_details_wrapper .about_details_item_wrapper {
+        justify-content: start;
+        margin-left: 150px;
+    }
+    #about .about_part_1_wrapper .about_details_wrapper .about_btn {
+        margin-left: 150px;
+    }
+    /* === about === */
+}
+/* ========================= device (xl 1200 > 1400) ========================= */
+/* ========================= device (xxl 1400 >>) ========================= */
+@media (min-width: 1400px) {
+}
+/* ========================= device (xxl 1400 >>) ========================= */
+/* ======== responsive css ======== */
+
+/* ===== design by AJOY SAHA ===== */
