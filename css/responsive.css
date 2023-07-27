@@ -139,6 +139,33 @@
 		padding-bottom: 10px;
 	}
 	/* === blog === */
+	/* === contact === */
+	#contact .contact_part_wrapper {
+		margin: 20px 0;
+	}
+	#contact .contact_part_wrapper .contact_details_wrapper {
+		row-gap: 20px;
+	}
+	#contact .contact_part_wrapper .contact_form_wrapper {
+		text-align: center;
+	}
+	#contact
+		.contact_part_wrapper
+		.contact_form_wrapper
+		.contact_form
+		.form_group {
+		display: flex;
+		gap: 0px;
+		flex-direction: column;
+	}
+	#contact
+		.contact_part_wrapper
+		.contact_form_wrapper
+		.contact_form
+		.inp_box_small {
+		width: 100%;
+	}
+	/* === contact === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
