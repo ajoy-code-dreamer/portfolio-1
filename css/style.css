@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 .container {
@@ -127,8 +128,7 @@ body {
   box-shadow: none;
 }
 #nav_main .menu {
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 #nav_main .menu .nav-link {
   color: #fff;
@@ -201,8 +201,7 @@ body {
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 10px solid #FF5722;
 }
 #banner .banner_wrapper .banner_content_wrapper {
@@ -266,8 +265,7 @@ body {
 #about .about_part_1_wrapper .about_img_wrapper .about_img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
   position: absolute;
   bottom: 30px;
@@ -408,8 +406,7 @@ body {
   border-radius: 10px;
   border: 2px solid #FF5722;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   cursor: pointer;
   margin: 0 auto;
@@ -473,8 +470,7 @@ body {
   height: 270px;
   border-radius: 5px;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   margin-bottom: 20px;
 }
@@ -578,8 +574,7 @@ body {
 #contact .contact_part_wrapper .contact_details_wrapper .social_link_wrapper .social_link_group {
   display: flex;
   align-items: center;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
 }
 #contact .contact_part_wrapper .contact_details_wrapper .social_link_wrapper .social_link_group .social_link {
   width: 40px;
@@ -640,13 +635,6 @@ body {
   resize: none;
   border: 1px solid #555;
   border-radius: 20px;
-}
-#contact .contact_part_wrapper .contact_form_wrapper .contact_form input::-moz-placeholder, #contact .contact_part_wrapper .contact_form_wrapper .contact_form textarea::-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #555;
-  text-transform: uppercase;
-  font-weight: 400;
 }
 #contact .contact_part_wrapper .contact_form_wrapper .contact_form input::placeholder, #contact .contact_part_wrapper .contact_form_wrapper .contact_form textarea::placeholder {
   font-family: "Open Sans", sans-serif;
