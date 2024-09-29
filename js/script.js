@@ -64,7 +64,7 @@ $(function () {
 	// });
 
 	$(window).load(function () {
-		$(".preloader").delay(1000).fadeOut(1000);
+		$(".preloader").delay(100).fadeOut(100);
 	});
 
 	// ===== preloader animation =====
